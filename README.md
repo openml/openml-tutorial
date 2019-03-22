@@ -1,5 +1,6 @@
 # OpenML Tutorial
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/openml/openml-tutorial/master)
+[![DockerHub](https://img.shields.io/docker/pulls/openml/openml-jupyter.svg)](https://cloud.docker.com/u/openml/repository/docker/openml/openml-jupyter)
 
 Learn how to use OpenML for reproducible and collaborative machine learning projects
 
