@@ -10,6 +10,5 @@ dependencies:
   - seaborn>=0.8.1
   - pprint>=0.1
   - jupyter>=1.0.0
-
-  # openml
-  - openml>=0.8.0
+  - pip:
+    - openml>=0.8.0
