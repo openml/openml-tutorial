@@ -49,6 +49,7 @@
     <h1 class="roomy">Hands-on</h1>
     <p class="lead">Materials for hands-on experience with OpenML</p>
     <ul class="list-group">
+      <li class="list-group-item d-flex justify-content-between showlinks"><span>OpenML Setup</span><div class="colab">1tEKBwVFuR-YU0ygxZFd4NWt5cjZ_kdgg</div></li>
       <li class="list-group-item d-flex justify-content-between showlinks"><span>OpenML Basics</span></li>
       <li class="list-group-item d-flex justify-content-between showlinks"><span>OpenML Basics - Solutions</span></li>
       <li class="list-group-item d-flex justify-content-between showlinks"><span>OpenML with scikit-learn</span></li>
@@ -95,7 +96,7 @@
     <script>
     $(function() {
     $( ".showlinks").each(function() { $(this).append(
-      "<div class='btn-group snug' role='group'><button type='button' class='btn btn-outline-primary' onclick=\"window.location.href=\'https:\/\/github.com\/openml\/openml-tutorial\/blob\/master\/notebooks\/"+$(this).find("span").html()+".ipynb\'\")>View</button><button type='button' class='btn btn-outline-primary' onclick=\"window.location.href=\'notebooks\/"+$(this).find("span").html()+".ipynb\'\")>Notebook</button><button type='button' class='btn btn-outline-primary' onclick=\"window.location.href=\'slides_html\/"+$(this).find("span").html()+".slides.html\'\")>HTML</button><button type='button' class='btn btn-outline-primary' onclick=\"window.location.href=\'slides_pdf\/"+$(this).find("span").html()+".pdf\'\")>PDF</button></div>"
+      "<div class='btn-group snug' role='group'><button type='button' class='btn btn-outline-primary' onclick=\"window.location.href=\'https:\/\/github.com\/openml\/openml-tutorial\/blob\/master\/notebooks\/"+$(this).find("span").html()+".ipynb\'\")>View</button><button type='button' class='btn btn-outline-primary' onclick=\"window.location.href=\'notebooks\/"+$(this).find("span").html()+".ipynb\'\")>Notebook</button><button type='button' class='btn btn-outline-primary' onclick=\"window.location.href=\'slides_html\/"+$(this).find("span").html()+".slides.html\'\")>HTML</button><button type='button' class='btn btn-outline-primary' onclick=\"window.location.href=\'slides_pdf\/"+$(this).find("span").html()+".pdf\'\")>PDF</button><button type='button' class='btn btn-outline-primary' onclick=\"window.location.href=\'https:\/\/colab.research.google.com\/drive\/"+$(this).find(".colab").html()+"\'\")>Colab</button></div>"
     )});
     $( ".showpdflink").each(function() { $(this).append(
       "<div class='btn-group snug' role='group'><button type='button' class='btn btn-outline-primary' onclick=\"window.location.href=\'slides_pdf\/"+$(this).find("span").html()+".pdf\'\")>PDF</button></div>"
