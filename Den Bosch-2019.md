@@ -19,7 +19,7 @@
 ## Choose your Jupyter environment 
 There are several options:
 * JADS Jupyter environment
-    - Download (or clone) this github repository. Locate the `notebook` folder.
+    - [Download](https://github.com/openml/openml-tutorial/archive/master.zip) (or clone) this github repository. Locate the `notebook` folder.
     - In your JADS Jupyter environment, create a new folder, click the upload button, and upload *everything* from the `notebook` folder into that new folder
     - Open and run the `Python setup` notebook to install all dependencies
     - Verify that everything installs correctly
