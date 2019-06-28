@@ -1,4 +1,4 @@
-# OpenML-AutoML Tutorial JADS 2019
+# OpenML-AutoML Tutorial JADS
 
 ## Schedule
 
