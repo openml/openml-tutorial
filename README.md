@@ -4,8 +4,10 @@
 
 Learn how to use OpenML for reproducible and collaborative machine learning projects
 
-[Tutorial website](https://openml.github.io/openml-tutorial/)
+To prepare for the tutorial, please check the [current version](https://github.com/openml/openml-tutorial/blob/master/Updated_tutorial/) which is still a work in progress.
 
-To prepare for the tutorial, please check the [Prerequisites in the Python API Tutorial](https://github.com/openml/openml-tutorial/blob/master/notebooks/OpenML%20Python%20Setup.ipynb)
+If you are interested in exploring on your own, then have a look at the [python API website tutorial](https://openml.github.io/openml-python/latest/examples/introduction/)
+
+The old [tutorial website](https://openml.github.io/openml-tutorial/) can still be found through this link, however keep in mind that some features might not be up to date.
 
 All materials are CC-0 licenced. You can use them however you like.
