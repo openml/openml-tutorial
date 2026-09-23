@@ -1,0 +1,4 @@
+openml==0.15.1
+matplotlib==3.10.9
+seaborn==0.13.2
+notebook==7.6.2
