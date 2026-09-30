@@ -14,7 +14,7 @@ There is currently no advanced usage tutorial, however a detailed [documentation
 To follow this tutorial, you will need:
 - Python 3.10+ for the most recent OpenML versions,
 - Jupyter notebook (can run in Google Colab),
-- Python package environment, such as `pip` with `venv` or Anaconda,
+- Python package environment, such as `uv`,  `pip` with `venv` or Anaconda,
 - OpenML Python package version 0.15.1,
 - (Recommended) OpenML account.
 
@@ -101,9 +101,19 @@ Published datasets can also be forked, allowing users to create their own versio
 If you would like to delete a dataset you own, then you must first detach it from all tasks.
 
 ## Tasks
-A task describes a machine-learning problem together with the experimental protocol used to evaluate a solution. It connects a dataset with a task type, target information, an estimation procedure such as a train/test split or cross-validation, and an evaluation measure. This makes results produced on the same task comparable because different users can follow the same experimental protocol.
+OpenML tasks are standardized combinations of datasets and machine-learning objectives, such as supervised classification. Each task contains a dataset as well as the data splits which could be used during experimental runs, together with information regarding task type, estimation procedure, and estimation measure.
 
-A task is therefore more than simply "a dataset to predict." It defines the conditions under which a model should be evaluated.
+Tasks can be listed, filtered, and gotten in the same manner as datasets with minor differences, such as `openml.tasks.list_tasks()` accepting a keyword argument for `task_type` and `openml.tasks.get_task()` only accepting the task ID and having the option to download an arff with data-split information.
+The function `openml.tasks.get_task()` can also forward keyword arguments to the associated dataset.
+
+### Dataset from task
+The dataset associated with the task can be extracted using the method `get_dataset()`, which works exactly the same as the `openml.datasets.get_dataset()` but the datataset ID is directly passed.
+The features and target data can be directly obtained using the method `get_X_and_y()` (or just `get_X()` for ClusteringTask).
+
+### Data splits
+As different task types require different amounts of repeats, folds, and samples, you can use the method `get_split_dimensions()` to know these values for a loaded task. This infomration can then be used in the method `get_train_test_split_indices()` to determine which exact indices to be used, setting up for reproducible runs.
+
+The associated examples notebook shows how this can be used directly, and will be developed to include examples of creating, publishing, editing, and deleting tasks (which requires it to have no associated runs or studies).
 
 ## Flows and runs
 
@@ -112,6 +122,8 @@ A task is therefore more than simply "a dataset to predict." It defines the cond
 ## Benchmark suites
 
 # References
+- OpenML. OpenML: The Open Machine Learning Platform. https://www.openml.org/
+
 - Feurer, M., van Rijn, J. N., Kadra, A., Gijsbers, P., Mallik, N., Ravi, S., Müller, A., Vanschoren, J., & Hutter, F. (2021). OpenML-Python: An extensible Python API for OpenML. Journal of Machine Learning Research, 22, 1–5. https://jmlr.org/papers/volume22/19-920/19-920.pdf
 
 - JGraph. diagrams.net. Version 31.4.6. JGraph Ltd, 2026. https://app.diagrams.net/
